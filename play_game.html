@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Game Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body onload="names()" style="background-color: maroon;">
+        <p style="color: lightpink;">
+            <label id="player_1_name_game">Manit : </label>
+            <label id="score_player_1_game">0</label><br>
+
+            <label id="player_2_name_game">Devansh : </label>
+            <label id="score_player_2_game">0</label>
+        </p>
+        <div class="container">
+            <center>
+                
+                <h1 style="color: white; font-weight: bold;">The Math Quiz Game !</h1>
+
+                <p style="color: lightgreen; font-size: 20px;">Question Turn : <label id="question_turn"></label><br>Answer Turn : <label id="answer_turn"></label><br>
+                </p>
+
+                <div class="col-md-3"></div>
+                <div style="background-color: white; text-align: left; border-radius: 10px; border-bottom-width: 15px; border-bottom-style: solid; border-bottom-color: white;" id="output" class="col-lg-6"></div><br><br><br><br><br><br><br>
+
+                <p style="color: lightblue; margin-top: 50px; font-size: 18px;">Number 1 : </p>
+                <input id="num1" placeholder="Number 1" style="width: 50%;" type="text"><br><br>
+
+                <p style="color: lightblue; font-size: 18px;">Number 2 : </p>
+                <input id="num2" placeholder="Number 2" style="width: 50%;" type="text"><br><br>
+
+                <button onclick="send()" style="width: 40%;" class="btn btn-success">Send</button>
+                
+            </center>
+        </div>
+
+        <script src="coding.js"></script>
+    </body>
+</html>
